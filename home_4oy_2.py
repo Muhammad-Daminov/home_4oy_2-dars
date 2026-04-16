@@ -87,8 +87,6 @@
             
 # 3 masala:
 
-import random
-
 class Playlist:
     def __init__(self, owner):
         self.owner = owner
@@ -105,7 +103,7 @@ class Playlist:
         return self.track.pop()
     
     def totaltracks(self):
-        return (random.randint(0, 5))
+        return len(self.track)
     def unique_tracks(self):
         result = []
         for i in self.track:
